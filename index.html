@@ -2,96 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sirisha Magishetty | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f6f6f6;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     header {
-      background: #4B0082;
-      color: white;
-      padding: 20px;
+      width: 100%;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    header img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid white;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    header p {
-      margin: 5px 0 0 0;
-      font-size: 16px;
-    }
-
-    main {
-      padding: 30px;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    h2 {
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
       color: #4B0082;
-      margin-bottom: 10px;
     }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
     }
 
-    a {
-      color: #FFD700;
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4B0082;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 20px 0 10px;
+      color: #4B0082;
+    }
+
+    p.about {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .buttons a {
       text-decoration: none;
+      color: #fff;
+      background-color: #4B0082;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background-color 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .buttons a:hover {
+      background-color: #3a006a;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #4B0082;
+      text-decoration: none;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="HD1.jpg" alt="Sirisha Magishetty" />
-    <div>
-      <h1>Sirisha Magishetty</h1>
-      <p>Aspiring Software Developer</p>
-      <p>Email: <a href="mailto:sirimagishetty@gmail.com">sirimagishetty@gmail.com</a></p>
-    </div>
+    <div class="logo">Sirisha Magishetty</div>
   </header>
 
-  <main>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>HTML & CSS</li>
-        <li>Problem Solving</li>
-        <li>Communication & Teamwork</li>
-      </ul>
-    </section>
-  </main>
+  <div class="container">
+    <img src="HD1.jpg" alt="Sirisha Magishetty" class="profile-pic" />
 
+    <h1>Sirisha Magishetty</h1>
+
+    <p class="about">
+      I’m a final-year B.Tech EEE student with a passion for software development, web technologies,
+      and problem-solving. I love building simple, meaningful projects and am actively seeking roles
+      to grow in the tech field.
+    </p>
+
+    <div class="buttons">
+      <a href="https://drive.google.com/file/d/1MPxqKyH17EU1eCEjHRlFElmZzGD9qh-2/view?usp=drive_link" target="_blank">Resume</a>
+      <a href="#">Projects</a>
+      <a href="#">Skills</a>
+      <a href="#">Personal</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="mailto:sirimagishetty@gmail.com">sirimagishetty@gmail.com</a> |
+      <a href="https://github.com/Sirimagishetty" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/magishetty-sirisha" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
